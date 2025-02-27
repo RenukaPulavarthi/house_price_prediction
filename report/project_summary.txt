@@ -1,0 +1,47 @@
+House Price Prediction Using Machine Learning
+1. Introduction
+Objective
+The objective of this project is to predict house prices based on various features like location, number of rooms, population density, and other housing characteristics. The predictions help real estate buyers, sellers, and investors make data-driven decisions.
+Problem Statement
+House prices depend on multiple factors such as location, size, number of rooms, and proximity to important facilities. Predicting prices accurately can help buyers and sellers make informed decisions. This project uses machine learning techniques to develop a predictive model for estimating house prices.
+Dataset Used
+* Dataset: California Housing Dataset
+* Source: Kaggle
+* Features: 10+ features including latitude, longitude, total_rooms, total_bedrooms, population, households, median_income, and ocean_proximity.
+2. Data Preprocessing & Feature Engineering
+* Handling Missing Values: Missing values in total_bedrooms were handled appropriately.
+* Feature Transformation: Applied logarithmic transformation on total_rooms, total_bedrooms, population, and households to reduce skewness.
+* Feature Engineering: 
+o Created bedroom_ratio = total_bedrooms / total_rooms
+o Created households_rooms = total_rooms / households
+* Encoding Categorical Data: Used one-hot encoding for the ocean_proximity feature.
+3. Exploratory Data Analysis (EDA)
+* Correlation Matrix & Heatmaps: Identified relationships between variables.
+* Histograms & Scatterplots: 
+o Plotted data distributions to check skewness.
+o Used scatterplots to visualize geographic impact on house prices.
+4. Model Selection & Training
+Machine Learning Models Used
+* Linear Regression
+* Random Forest Regression
+Performance Metrics
+* Linear Regression Score: ~ X% (adjusted based on results)
+* Random Forest Regression Score: 81% (Best Model Chosen)
+* Evaluation Metrics: 
+o R² Score
+o Mean Absolute Error (MAE)
+o Mean Squared Error (MSE)
+5. Results & Insights
+* Best Performing Model: Random Forest Regression with 81% accuracy.
+* Feature Importance Analysis: 
+o median_income had the highest correlation with house prices.
+o latitude and longitude also significantly influenced house prices.
+* Challenges Faced: 
+o Data preprocessing required handling skewed distributions.
+o Model tuning to improve accuracy.
+6. Conclusion 
+* Random Forest Regression provided the best results with an 81% accuracy.
+* Features like median_income, location, and total_rooms played a crucial role in price prediction.
+7. References & Acknowledgments
+* Dataset Source: California Housing Dataset
+* Libraries Used: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
